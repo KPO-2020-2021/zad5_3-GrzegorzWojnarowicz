@@ -1,0 +1,51 @@
+\hypertarget{class_prism}{}\doxysection{Prism Class Reference}
+\label{class_prism}\index{Prism@{Prism}}
+Inheritance diagram for Prism\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_prism}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_prism_a6c245e09fd12c99106535931d8ec6278}\label{class_prism_a6c245e09fd12c99106535931d8ec6278}} 
+{\bfseries Prism} (std\+::string file\+Name\+Of\+Model, std\+::string file\+Name\+Of\+Block=\char`\"{}../data/Cuboid\+Block.\+txt\char`\"{}, Matrix3x3 initial\+Orientation=\mbox{\hyperlink{class_matrix3x3}{Matrix3x3}}(), \mbox{\hyperlink{classvector3_d}{vector3D}} initial\+Position=\mbox{\hyperlink{classvector3_d}{vector3D}}())
+\item 
+void \mbox{\hyperlink{class_prism_aaaee947378503d2d3885ee0faff383b3}{read\+Model\+Vertices\+Position}} () override
+\item 
+void \mbox{\hyperlink{class_prism_a56de04262784d9fad7ef192a70c53e9f}{calculate\+Position}} () override
+\item 
+\mbox{\Hypertarget{class_prism_a16ffe4fff8afcd109a197fdbbe549109}\label{class_prism_a16ffe4fff8afcd109a197fdbbe549109}} 
+std\+::string {\bfseries get\+Type} () override
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_prism_a56de04262784d9fad7ef192a70c53e9f}\label{class_prism_a56de04262784d9fad7ef192a70c53e9f}} 
+\index{Prism@{Prism}!calculatePosition@{calculatePosition}}
+\index{calculatePosition@{calculatePosition}!Prism@{Prism}}
+\doxysubsubsection{\texorpdfstring{calculatePosition()}{calculatePosition()}}
+{\footnotesize\ttfamily void Prism\+::calculate\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+calculate actual position of obstacle 
+
+Reimplemented from \mbox{\hyperlink{class_object_a475b0f7bade72ace0770d3c9aedec03c}{Object}}.
+
+\mbox{\Hypertarget{class_prism_aaaee947378503d2d3885ee0faff383b3}\label{class_prism_aaaee947378503d2d3885ee0faff383b3}} 
+\index{Prism@{Prism}!readModelVerticesPosition@{readModelVerticesPosition}}
+\index{readModelVerticesPosition@{readModelVerticesPosition}!Prism@{Prism}}
+\doxysubsubsection{\texorpdfstring{readModelVerticesPosition()}{readModelVerticesPosition()}}
+{\footnotesize\ttfamily void Prism\+::read\+Model\+Vertices\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+read position of obstacle from file and convert it by scale 
+
+Reimplemented from \mbox{\hyperlink{class_object_a243a0ef7a5a1abbb0ebd87f4e68c24df}{Object}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/chilon/\+Pobrane/zad5\+\_\+3-\/\+Grzegorz\+Wojnarowicz/inc/Prism.\+h\item 
+/home/chilon/\+Pobrane/zad5\+\_\+3-\/\+Grzegorz\+Wojnarowicz/src/Prism.\+cpp\end{DoxyCompactItemize}

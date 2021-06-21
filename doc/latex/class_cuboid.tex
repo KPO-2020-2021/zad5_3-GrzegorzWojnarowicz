@@ -1,0 +1,89 @@
+\hypertarget{class_cuboid}{}\doxysection{Cuboid Class Reference}
+\label{class_cuboid}\index{Cuboid@{Cuboid}}
+Inheritance diagram for Cuboid\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_cuboid}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_cuboid_acee5b05ddf9b30035d6abf4ba1631977}\label{class_cuboid_acee5b05ddf9b30035d6abf4ba1631977}} 
+{\bfseries Cuboid} (std\+::string file\+Name\+Of\+Model, std\+::string file\+Name\+Of\+Block=\char`\"{}../data/Cuboid\+Block.\+txt\char`\"{}, Matrix3x3 initial\+Orientation=\mbox{\hyperlink{class_matrix3x3}{Matrix3x3}}(), \mbox{\hyperlink{classvector3_d}{vector3D}} initial\+Position=\mbox{\hyperlink{classvector3_d}{vector3D}}())
+\item 
+void \mbox{\hyperlink{class_cuboid_a4dfcb3f1bbedd6c1fcc1a371187685ec}{read\+Model\+Vertices\+Position}} ()
+\item 
+void \mbox{\hyperlink{class_cuboid_a95826a479f1821b7bffbadfd3867deee}{calculate\+Actual\+Position}} ()
+\item 
+void \mbox{\hyperlink{class_cuboid_aefb17c72cb506b2db278186579ffc6f2}{translation\+By\+Vector}} (\mbox{\hyperlink{classvector3_d}{vector3D}} \&Vec)
+\item 
+void \mbox{\hyperlink{class_cuboid_a1dcc0211df3fbb4107e0f2d4f594a4b6}{rotation\+By\+Matrix}} (const \mbox{\hyperlink{class_matrix3x3}{Matrix3x3}} \&rot\+Matrix)
+\item 
+\mbox{\Hypertarget{class_cuboid_a42c033f6c67c1a103fd34b7c8759368f}\label{class_cuboid_a42c033f6c67c1a103fd34b7c8759368f}} 
+const \mbox{\hyperlink{classvector3_d}{vector3D}} \& {\bfseries operator\mbox{[}$\,$\mbox{]}} (int index) const
+\item 
+\mbox{\Hypertarget{class_cuboid_a5f69ef8f50eda4fda4450ad9a564f2a8}\label{class_cuboid_a5f69ef8f50eda4fda4450ad9a564f2a8}} 
+\mbox{\hyperlink{classvector3_d}{vector3D}} \& {\bfseries operator\mbox{[}$\,$\mbox{]}} (int index)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_cuboid_ae1180b97789af57d6ad835a7ad2065f0}\label{class_cuboid_ae1180b97789af57d6ad835a7ad2065f0}} 
+\mbox{\hyperlink{classvector3_d}{vector3D}} {\bfseries vertices} \mbox{[}V\+E\+R\+T\+I\+C\+E\+S\+\_\+\+N\+U\+M\+B\+E\+R\+\_\+\+O\+F\+\_\+\+C\+U\+B\+O\+ID\mbox{]}
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_cuboid_a6a27d21a4d28d145163e02c4bb77cb11}\label{class_cuboid_a6a27d21a4d28d145163e02c4bb77cb11}} 
+bool {\bfseries operator==} (const \mbox{\hyperlink{class_cuboid}{Cuboid}} \&cub1, const \mbox{\hyperlink{class_cuboid}{Cuboid}} \&cub2)
+\item 
+std\+::ostream \& \mbox{\hyperlink{class_cuboid_a14878a96eaf40b4cfb2df06041d49380}{operator$<$$<$}} (std\+::ostream \&ost, \mbox{\hyperlink{class_cuboid}{Cuboid}} \&cub)
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_cuboid_a95826a479f1821b7bffbadfd3867deee}\label{class_cuboid_a95826a479f1821b7bffbadfd3867deee}} 
+\index{Cuboid@{Cuboid}!calculateActualPosition@{calculateActualPosition}}
+\index{calculateActualPosition@{calculateActualPosition}!Cuboid@{Cuboid}}
+\doxysubsubsection{\texorpdfstring{calculateActualPosition()}{calculateActualPosition()}}
+{\footnotesize\ttfamily void Cuboid\+::calculate\+Actual\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+calculate actual position \mbox{\Hypertarget{class_cuboid_a4dfcb3f1bbedd6c1fcc1a371187685ec}\label{class_cuboid_a4dfcb3f1bbedd6c1fcc1a371187685ec}} 
+\index{Cuboid@{Cuboid}!readModelVerticesPosition@{readModelVerticesPosition}}
+\index{readModelVerticesPosition@{readModelVerticesPosition}!Cuboid@{Cuboid}}
+\doxysubsubsection{\texorpdfstring{readModelVerticesPosition()}{readModelVerticesPosition()}}
+{\footnotesize\ttfamily void Cuboid\+::read\+Model\+Vertices\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+read position from model file 
+
+Reimplemented from \mbox{\hyperlink{class_object_a243a0ef7a5a1abbb0ebd87f4e68c24df}{Object}}.
+
+\mbox{\Hypertarget{class_cuboid_a1dcc0211df3fbb4107e0f2d4f594a4b6}\label{class_cuboid_a1dcc0211df3fbb4107e0f2d4f594a4b6}} 
+\index{Cuboid@{Cuboid}!rotationByMatrix@{rotationByMatrix}}
+\index{rotationByMatrix@{rotationByMatrix}!Cuboid@{Cuboid}}
+\doxysubsubsection{\texorpdfstring{rotationByMatrix()}{rotationByMatrix()}}
+{\footnotesize\ttfamily void Cuboid\+::rotation\+By\+Matrix (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_matrix3x3}{Matrix3x3}} \&}]{rot\+Matrix }\end{DoxyParamCaption})}
+
+Rotate all vertices by matrix \mbox{\Hypertarget{class_cuboid_aefb17c72cb506b2db278186579ffc6f2}\label{class_cuboid_aefb17c72cb506b2db278186579ffc6f2}} 
+\index{Cuboid@{Cuboid}!translationByVector@{translationByVector}}
+\index{translationByVector@{translationByVector}!Cuboid@{Cuboid}}
+\doxysubsubsection{\texorpdfstring{translationByVector()}{translationByVector()}}
+{\footnotesize\ttfamily void Cuboid\+::translation\+By\+Vector (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classvector3_d}{vector3D}} \&}]{Vec }\end{DoxyParamCaption})}
+
+Translate all vertices by vector 
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{class_cuboid_a14878a96eaf40b4cfb2df06041d49380}\label{class_cuboid_a14878a96eaf40b4cfb2df06041d49380}} 
+\index{Cuboid@{Cuboid}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Cuboid@{Cuboid}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily std\+::ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{ost,  }\item[{\mbox{\hyperlink{class_cuboid}{Cuboid}} \&}]{cub }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+write readable for gnuplot positions of cuboid vertices 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/chilon/\+Pobrane/zad5\+\_\+3-\/\+Grzegorz\+Wojnarowicz/inc/Cuboid.\+h\item 
+/home/chilon/\+Pobrane/zad5\+\_\+3-\/\+Grzegorz\+Wojnarowicz/src/Cuboid.\+cpp\end{DoxyCompactItemize}

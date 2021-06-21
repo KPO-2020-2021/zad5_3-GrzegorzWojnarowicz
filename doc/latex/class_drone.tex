@@ -1,0 +1,95 @@
+\hypertarget{class_drone}{}\doxysection{Drone Class Reference}
+\label{class_drone}\index{Drone@{Drone}}
+Inheritance diagram for Drone\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_drone}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_drone_ab692baa4be5c43b72990ce1b01bdc805}{Drone}} ()
+\item 
+\mbox{\Hypertarget{class_drone_a25796fc37991bef0033f78ea033cfb78}\label{class_drone_a25796fc37991bef0033f78ea033cfb78}} 
+{\bfseries Drone} (std\+::string file\+Name\+Ofdrone\+Body, std\+::string file\+Name\+Of\+Rotor0, std\+::string file\+Name\+Of\+Rotor1, std\+::string file\+Name\+Of\+Rotor2, std\+::string file\+Name\+Of\+Rotor3, \mbox{\hyperlink{classvector3_d}{vector3D}} initial\+Translation, \mbox{\hyperlink{class_matrix3x3}{Matrix3x3}} initial\+Orientation)
+\item 
+\mbox{\Hypertarget{class_drone_aff282c6422833993f9e1b6cc8696b943}\label{class_drone_aff282c6422833993f9e1b6cc8696b943}} 
+\mbox{\hyperlink{class_hex}{Hex}} {\bfseries get\+Rotor} (int index)
+\item 
+\mbox{\Hypertarget{class_drone_ac23c05016d90d90f4e1264828ee3568a}\label{class_drone_ac23c05016d90d90f4e1264828ee3568a}} 
+const \mbox{\hyperlink{class_hex}{Hex}} \& {\bfseries operator\mbox{[}$\,$\mbox{]}} (int index) const
+\item 
+\mbox{\Hypertarget{class_drone_aedaaeb397ad543113207b443325e7b32}\label{class_drone_aedaaeb397ad543113207b443325e7b32}} 
+\mbox{\hyperlink{class_hex}{Hex}} \& {\bfseries operator\mbox{[}$\,$\mbox{]}} (int index)
+\item 
+\mbox{\Hypertarget{class_drone_abf2b5a4faf39e054f57e6ca0e2512d84}\label{class_drone_abf2b5a4faf39e054f57e6ca0e2512d84}} 
+\mbox{\hyperlink{class_cuboid}{Cuboid}} {\bfseries getdrone\+Body} ()
+\item 
+void \mbox{\hyperlink{class_drone_a136871ad797fddf96ee49cc7db8eceb8}{calculate\+Position}} ()
+\item 
+void \mbox{\hyperlink{class_drone_a6b7ecaedf63bbf338a7e6be957f6243c}{rotate\+Drone}} (\mbox{\hyperlink{class_matrix3x3}{Matrix3x3}} rot\+Matrix)
+\item 
+void \mbox{\hyperlink{class_drone_adaa156155c0b08b8f196dc7235ba7621}{translate\+Drone}} (\mbox{\hyperlink{classvector3_d}{vector3D}} vec)
+\item 
+void \mbox{\hyperlink{class_drone_a1f3f6fe2e342144de2b03afbc6596893}{rotate\+Rotors}} (const \mbox{\hyperlink{class_matrix3x3}{Matrix3x3}} \&rot\+Left, const \mbox{\hyperlink{class_matrix3x3}{Matrix3x3}} \&rot\+Right, const int \&number\+Of\+Rotation)
+\item 
+\mbox{\Hypertarget{class_drone_aa1fd1f4fb0902701d7e9075ce04df2b8}\label{class_drone_aa1fd1f4fb0902701d7e9075ce04df2b8}} 
+std\+::string {\bfseries get\+Type} () override
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_drone_a3ea937cec8bc35e5fe36ff80c5ad1521}\label{class_drone_a3ea937cec8bc35e5fe36ff80c5ad1521}} 
+\mbox{\hyperlink{class_cuboid}{Cuboid}} {\bfseries drone\+Body}
+\item 
+\mbox{\Hypertarget{class_drone_ac2bcec8bb9b0faa4b88863b10a92d3fb}\label{class_drone_ac2bcec8bb9b0faa4b88863b10a92d3fb}} 
+\mbox{\hyperlink{class_hex}{Hex}} {\bfseries rotors} \mbox{[}N\+U\+M\+B\+E\+R\+\_\+\+O\+F\+\_\+\+R\+O\+T\+O\+RS\mbox{]}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_drone_ab692baa4be5c43b72990ce1b01bdc805}\label{class_drone_ab692baa4be5c43b72990ce1b01bdc805}} 
+\index{Drone@{Drone}!Drone@{Drone}}
+\index{Drone@{Drone}!Drone@{Drone}}
+\doxysubsubsection{\texorpdfstring{Drone()}{Drone()}}
+{\footnotesize\ttfamily Drone\+::\+Drone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+left up rotor -\/$>$0, right up-\/$>$1, right down -\/$>$2, left down -\/$>$ 3 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_drone_a136871ad797fddf96ee49cc7db8eceb8}\label{class_drone_a136871ad797fddf96ee49cc7db8eceb8}} 
+\index{Drone@{Drone}!calculatePosition@{calculatePosition}}
+\index{calculatePosition@{calculatePosition}!Drone@{Drone}}
+\doxysubsubsection{\texorpdfstring{calculatePosition()}{calculatePosition()}}
+{\footnotesize\ttfamily void Drone\+::calculate\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+calculate actual position od every drone component 
+
+Reimplemented from \mbox{\hyperlink{class_object_a475b0f7bade72ace0770d3c9aedec03c}{Object}}.
+
+\mbox{\Hypertarget{class_drone_a6b7ecaedf63bbf338a7e6be957f6243c}\label{class_drone_a6b7ecaedf63bbf338a7e6be957f6243c}} 
+\index{Drone@{Drone}!rotateDrone@{rotateDrone}}
+\index{rotateDrone@{rotateDrone}!Drone@{Drone}}
+\doxysubsubsection{\texorpdfstring{rotateDrone()}{rotateDrone()}}
+{\footnotesize\ttfamily void Drone\+::rotate\+Drone (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_matrix3x3}{Matrix3x3}}}]{rot\+Matrix }\end{DoxyParamCaption})}
+
+multiply every drone element orientation by matrix \mbox{\Hypertarget{class_drone_a1f3f6fe2e342144de2b03afbc6596893}\label{class_drone_a1f3f6fe2e342144de2b03afbc6596893}} 
+\index{Drone@{Drone}!rotateRotors@{rotateRotors}}
+\index{rotateRotors@{rotateRotors}!Drone@{Drone}}
+\doxysubsubsection{\texorpdfstring{rotateRotors()}{rotateRotors()}}
+{\footnotesize\ttfamily void Drone\+::rotate\+Rotors (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_matrix3x3}{Matrix3x3}} \&}]{rot\+Left,  }\item[{const \mbox{\hyperlink{class_matrix3x3}{Matrix3x3}} \&}]{rot\+Right,  }\item[{const int \&}]{number\+Of\+Rotation }\end{DoxyParamCaption})}
+
+rotate rotors by given matrices once \mbox{\Hypertarget{class_drone_adaa156155c0b08b8f196dc7235ba7621}\label{class_drone_adaa156155c0b08b8f196dc7235ba7621}} 
+\index{Drone@{Drone}!translateDrone@{translateDrone}}
+\index{translateDrone@{translateDrone}!Drone@{Drone}}
+\doxysubsubsection{\texorpdfstring{translateDrone()}{translateDrone()}}
+{\footnotesize\ttfamily void Drone\+::translate\+Drone (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classvector3_d}{vector3D}}}]{vec }\end{DoxyParamCaption})}
+
+add vector to every drone component position 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/chilon/\+Pobrane/zad5\+\_\+3-\/\+Grzegorz\+Wojnarowicz/inc/Drone.\+h\item 
+/home/chilon/\+Pobrane/zad5\+\_\+3-\/\+Grzegorz\+Wojnarowicz/src/Drone.\+cpp\end{DoxyCompactItemize}

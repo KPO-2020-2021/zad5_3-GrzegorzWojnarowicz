@@ -1,0 +1,86 @@
+\hypertarget{class_hex}{}\doxysection{Hex Class Reference}
+\label{class_hex}\index{Hex@{Hex}}
+Inheritance diagram for Hex\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_hex}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_hex_a6c6f7b053efd871733a805bda3e78530}\label{class_hex_a6c6f7b053efd871733a805bda3e78530}} 
+{\bfseries Hex} (std\+::string file\+Name\+Of\+Model, std\+::string file\+Name\+Of\+Block=\char`\"{}../data/Hex\+Block.\+txt\char`\"{}, Matrix3x3 initial\+Orientation=\mbox{\hyperlink{class_matrix3x3}{Matrix3x3}}(), \mbox{\hyperlink{classvector3_d}{vector3D}} initial\+Position=\mbox{\hyperlink{classvector3_d}{vector3D}}())
+\item 
+void \mbox{\hyperlink{class_hex_a8966b22d04d35e00cd40dea383a15bf5}{read\+Model\+Vertices\+Position}} ()
+\item 
+\mbox{\Hypertarget{class_hex_a0606650e7609dedc22ffbe1eb1da1ec9}\label{class_hex_a0606650e7609dedc22ffbe1eb1da1ec9}} 
+const \mbox{\hyperlink{classvector3_d}{vector3D}} \& {\bfseries operator\mbox{[}$\,$\mbox{]}} (int index) const
+\item 
+\mbox{\Hypertarget{class_hex_aeecc106bb4d16a3ff29d57a5480c686e}\label{class_hex_aeecc106bb4d16a3ff29d57a5480c686e}} 
+\mbox{\hyperlink{classvector3_d}{vector3D}} \& {\bfseries operator\mbox{[}$\,$\mbox{]}} (int index)
+\item 
+void \mbox{\hyperlink{class_hex_a916fb588de1d5fa95c1361ab6f7f269b}{calculate\+Actual\+Position}} (\mbox{\hyperlink{classvector3_d}{vector3D}} pos\+Ofdrone\+Body)
+\item 
+void \mbox{\hyperlink{class_hex_a091d00df4f3915f466856dc37991830a}{rotation\+By\+Matrix}} (\mbox{\hyperlink{class_matrix3x3}{Matrix3x3}} rot\+Matrix)
+\item 
+void \mbox{\hyperlink{class_hex_a233c41be84c4b41e336e456b76c05d41}{translation\+By\+Vector}} (\mbox{\hyperlink{classvector3_d}{vector3D}} vec)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_hex_a35de93cd29deea62f4c255096b4ea0e9}\label{class_hex_a35de93cd29deea62f4c255096b4ea0e9}} 
+\mbox{\hyperlink{classvector3_d}{vector3D}} {\bfseries vertices} \mbox{[}V\+E\+R\+T\+I\+C\+E\+S\+\_\+\+N\+U\+M\+B\+E\+R\+\_\+\+O\+F\+\_\+\+H\+EX\mbox{]}
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream \& \mbox{\hyperlink{class_hex_a29cf6c23e78c61a019143b7fb7fc34d5}{operator$<$$<$}} (std\+::ostream \&ost, \mbox{\hyperlink{class_hex}{Hex}} \&hex)
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_hex_a916fb588de1d5fa95c1361ab6f7f269b}\label{class_hex_a916fb588de1d5fa95c1361ab6f7f269b}} 
+\index{Hex@{Hex}!calculateActualPosition@{calculateActualPosition}}
+\index{calculateActualPosition@{calculateActualPosition}!Hex@{Hex}}
+\doxysubsubsection{\texorpdfstring{calculateActualPosition()}{calculateActualPosition()}}
+{\footnotesize\ttfamily void Hex\+::calculate\+Actual\+Position (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classvector3_d}{vector3D}}}]{pos\+Ofdrone\+Body }\end{DoxyParamCaption})}
+
+calculate actual position \mbox{\Hypertarget{class_hex_a8966b22d04d35e00cd40dea383a15bf5}\label{class_hex_a8966b22d04d35e00cd40dea383a15bf5}} 
+\index{Hex@{Hex}!readModelVerticesPosition@{readModelVerticesPosition}}
+\index{readModelVerticesPosition@{readModelVerticesPosition}!Hex@{Hex}}
+\doxysubsubsection{\texorpdfstring{readModelVerticesPosition()}{readModelVerticesPosition()}}
+{\footnotesize\ttfamily void Hex\+::read\+Model\+Vertices\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+read position from model file 
+
+Reimplemented from \mbox{\hyperlink{class_object_a243a0ef7a5a1abbb0ebd87f4e68c24df}{Object}}.
+
+\mbox{\Hypertarget{class_hex_a091d00df4f3915f466856dc37991830a}\label{class_hex_a091d00df4f3915f466856dc37991830a}} 
+\index{Hex@{Hex}!rotationByMatrix@{rotationByMatrix}}
+\index{rotationByMatrix@{rotationByMatrix}!Hex@{Hex}}
+\doxysubsubsection{\texorpdfstring{rotationByMatrix()}{rotationByMatrix()}}
+{\footnotesize\ttfamily void Hex\+::rotation\+By\+Matrix (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_matrix3x3}{Matrix3x3}}}]{rot\+Matrix }\end{DoxyParamCaption})}
+
+Rotate all vertices by matrix \mbox{\Hypertarget{class_hex_a233c41be84c4b41e336e456b76c05d41}\label{class_hex_a233c41be84c4b41e336e456b76c05d41}} 
+\index{Hex@{Hex}!translationByVector@{translationByVector}}
+\index{translationByVector@{translationByVector}!Hex@{Hex}}
+\doxysubsubsection{\texorpdfstring{translationByVector()}{translationByVector()}}
+{\footnotesize\ttfamily void Hex\+::translation\+By\+Vector (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classvector3_d}{vector3D}}}]{vec }\end{DoxyParamCaption})}
+
+Translate all vertices by vector 
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{class_hex_a29cf6c23e78c61a019143b7fb7fc34d5}\label{class_hex_a29cf6c23e78c61a019143b7fb7fc34d5}} 
+\index{Hex@{Hex}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Hex@{Hex}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily std\+::ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{ost,  }\item[{\mbox{\hyperlink{class_hex}{Hex}} \&}]{hex }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+write readable for gnuplot positions that are interpreted as non empty hex 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/chilon/\+Pobrane/zad5\+\_\+3-\/\+Grzegorz\+Wojnarowicz/inc/Hex.\+h\item 
+/home/chilon/\+Pobrane/zad5\+\_\+3-\/\+Grzegorz\+Wojnarowicz/src/Hex.\+cpp\end{DoxyCompactItemize}

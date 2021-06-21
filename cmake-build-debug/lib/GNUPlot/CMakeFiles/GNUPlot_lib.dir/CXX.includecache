@@ -1,0 +1,42 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/artur/cpp_projekty/zad5_3-ArturZiolkowski1999/lib/GNUPlot/lacze_do_gnuplota.cpp
+cstdio
+-
+cstring
+-
+cmath
+-
+cstdlib
+-
+iostream
+-
+sys/stat.h
+-
+unistd.h
+-
+fcntl.h
+-
+sstream
+-
+fstream
+-
+limits
+-
+lacze_do_gnuplota.hh
+/home/artur/cpp_projekty/zad5_3-ArturZiolkowski1999/lib/GNUPlot/lacze_do_gnuplota.hh
+
+/home/artur/cpp_projekty/zad5_3-ArturZiolkowski1999/lib/GNUPlot/lacze_do_gnuplota.hh
+string
+-
+list
+-
+vector
+-
+

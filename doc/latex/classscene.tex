@@ -1,0 +1,111 @@
+\hypertarget{classscene}{}\doxysection{scene Class Reference}
+\label{classscene}\index{scene@{scene}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classscene_a2d4caa33946da6524ac0ae1cba80093a}\label{classscene_a2d4caa33946da6524ac0ae1cba80093a}} 
+{\bfseries scene} (double \+\_\+\+X\+Range\mbox{[}2\mbox{]}, double \+\_\+\+Y\+Range\mbox{[}2\mbox{]}, double \+\_\+\+Z\+Range\mbox{[}2\mbox{]})
+\item 
+void \mbox{\hyperlink{classscene_aaca71582ae17b7c6b108b52a5176b79b}{draw\+Scene}} ()
+\item 
+void \mbox{\hyperlink{classscene_a60535ae216f72276be373b7ac50b1251}{animate\+Drone\+Translation}} (double angle\+Of\+Flight, double length\+Of\+Flight)
+\item 
+void \mbox{\hyperlink{classscene_afa8be8d7f4c0eacc049882cde4a0bf7d}{animate\+Simple\+Drone\+Translation}} (double angle\+Of\+Flight, \mbox{\hyperlink{classvector3_d}{vector3D}} target\+Vec)
+\item 
+void \mbox{\hyperlink{classscene_acd02f03473c01c58c45ab1c0c241a9f7}{animate\+Rotation}} (double target\+Angle, char axis)
+\item 
+\mbox{\Hypertarget{classscene_ac164eada0604b8ee6287b5e0b4bd5113}\label{classscene_ac164eada0604b8ee6287b5e0b4bd5113}} 
+int {\bfseries get\+Index} ()
+\item 
+\mbox{\Hypertarget{classscene_ab77081364a88a2f44bc060c3929ca0db}\label{classscene_ab77081364a88a2f44bc060c3929ca0db}} 
+void {\bfseries set\+Index} (int index)
+\item 
+void \mbox{\hyperlink{classscene_a4561a15e5b06553724ed8a672eae3c44}{change\+Drones\+Colors}} ()
+\item 
+void \mbox{\hyperlink{classscene_a015aaecebdc48857c7aa2bff3060c61d}{make\+Circle\+With\+Drone}} (double radius)
+\item 
+\mbox{\Hypertarget{classscene_af285aebf982e8ccf3246639d8bfd33f4}\label{classscene_af285aebf982e8ccf3246639d8bfd33f4}} 
+std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_object}{Object}} $>$ $>$ \& {\bfseries get\+Objects} ()
+\item 
+void \mbox{\hyperlink{classscene_a6085bc045deb7a32bae5a05cfb1d85dc}{erase\+Object\+From\+List}} (int index)
+\item 
+void \mbox{\hyperlink{classscene_a28bc9a9eb9ee29425627e11b0c2cf56f}{add\+Object\+To\+List}} (\mbox{\hyperlink{class_matrix3x3}{Matrix3x3}} initial\+Orientation, \mbox{\hyperlink{classvector3_d}{vector3D}} initial\+Position, char obj\+Type, double scale)
+\item 
+void \mbox{\hyperlink{classscene_a5907331c3912a3c6f59d913189f129d7}{move\+Object\+From\+List}} (int index, \mbox{\hyperlink{classvector3_d}{vector3D}} pos)
+\item 
+void \mbox{\hyperlink{classscene_a51c3767443697266b5abc48ad02574c8}{rotate\+Object\+From\+List}} (int index, \mbox{\hyperlink{class_matrix3x3}{Matrix3x3}} orient)
+\item 
+\mbox{\Hypertarget{classscene_a99bb4f727cc119f44710213235a32cb3}\label{classscene_a99bb4f727cc119f44710213235a32cb3}} 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_drone}{Drone}} $>$ {\bfseries get\+Drone} (int index)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classscene_a28bc9a9eb9ee29425627e11b0c2cf56f}\label{classscene_a28bc9a9eb9ee29425627e11b0c2cf56f}} 
+\index{scene@{scene}!addObjectToList@{addObjectToList}}
+\index{addObjectToList@{addObjectToList}!scene@{scene}}
+\doxysubsubsection{\texorpdfstring{addObjectToList()}{addObjectToList()}}
+{\footnotesize\ttfamily void scene\+::add\+Object\+To\+List (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_matrix3x3}{Matrix3x3}}}]{initial\+Orientation,  }\item[{\mbox{\hyperlink{classvector3_d}{vector3D}}}]{initial\+Position,  }\item[{char}]{obj\+Type,  }\item[{double}]{scale }\end{DoxyParamCaption})}
+
+add object to the list of objects \mbox{\Hypertarget{classscene_a60535ae216f72276be373b7ac50b1251}\label{classscene_a60535ae216f72276be373b7ac50b1251}} 
+\index{scene@{scene}!animateDroneTranslation@{animateDroneTranslation}}
+\index{animateDroneTranslation@{animateDroneTranslation}!scene@{scene}}
+\doxysubsubsection{\texorpdfstring{animateDroneTranslation()}{animateDroneTranslation()}}
+{\footnotesize\ttfamily void scene\+::animate\+Drone\+Translation (\begin{DoxyParamCaption}\item[{double}]{angle\+Of\+Flight,  }\item[{double}]{length\+Of\+Flight }\end{DoxyParamCaption})}
+
+full animated drone translation with route drawing and moving up and down \mbox{\Hypertarget{classscene_acd02f03473c01c58c45ab1c0c241a9f7}\label{classscene_acd02f03473c01c58c45ab1c0c241a9f7}} 
+\index{scene@{scene}!animateRotation@{animateRotation}}
+\index{animateRotation@{animateRotation}!scene@{scene}}
+\doxysubsubsection{\texorpdfstring{animateRotation()}{animateRotation()}}
+{\footnotesize\ttfamily void scene\+::animate\+Rotation (\begin{DoxyParamCaption}\item[{double}]{target\+Angle,  }\item[{char}]{axis }\end{DoxyParamCaption})}
+
+animate rotation by given degry around \textquotesingle{}z\textquotesingle{}matrix \mbox{\Hypertarget{classscene_afa8be8d7f4c0eacc049882cde4a0bf7d}\label{classscene_afa8be8d7f4c0eacc049882cde4a0bf7d}} 
+\index{scene@{scene}!animateSimpleDroneTranslation@{animateSimpleDroneTranslation}}
+\index{animateSimpleDroneTranslation@{animateSimpleDroneTranslation}!scene@{scene}}
+\doxysubsubsection{\texorpdfstring{animateSimpleDroneTranslation()}{animateSimpleDroneTranslation()}}
+{\footnotesize\ttfamily void scene\+::animate\+Simple\+Drone\+Translation (\begin{DoxyParamCaption}\item[{double}]{angle\+Of\+Flight,  }\item[{\mbox{\hyperlink{classvector3_d}{vector3D}}}]{target\+Vec }\end{DoxyParamCaption})}
+
+simple animated drone flight without route drawing and moving up and down \mbox{\Hypertarget{classscene_a4561a15e5b06553724ed8a672eae3c44}\label{classscene_a4561a15e5b06553724ed8a672eae3c44}} 
+\index{scene@{scene}!changeDronesColors@{changeDronesColors}}
+\index{changeDronesColors@{changeDronesColors}!scene@{scene}}
+\doxysubsubsection{\texorpdfstring{changeDronesColors()}{changeDronesColors()}}
+{\footnotesize\ttfamily void scene\+::change\+Drones\+Colors (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+changing color of chosen drone and not chosen drone \mbox{\Hypertarget{classscene_aaca71582ae17b7c6b108b52a5176b79b}\label{classscene_aaca71582ae17b7c6b108b52a5176b79b}} 
+\index{scene@{scene}!drawScene@{drawScene}}
+\index{drawScene@{drawScene}!scene@{scene}}
+\doxysubsubsection{\texorpdfstring{drawScene()}{drawScene()}}
+{\footnotesize\ttfamily void scene\+::draw\+Scene (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+draw every element of scene \mbox{\Hypertarget{classscene_a6085bc045deb7a32bae5a05cfb1d85dc}\label{classscene_a6085bc045deb7a32bae5a05cfb1d85dc}} 
+\index{scene@{scene}!eraseObjectFromList@{eraseObjectFromList}}
+\index{eraseObjectFromList@{eraseObjectFromList}!scene@{scene}}
+\doxysubsubsection{\texorpdfstring{eraseObjectFromList()}{eraseObjectFromList()}}
+{\footnotesize\ttfamily void scene\+::erase\+Object\+From\+List (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption})}
+
+erase object by given index from list of objects \mbox{\Hypertarget{classscene_a015aaecebdc48857c7aa2bff3060c61d}\label{classscene_a015aaecebdc48857c7aa2bff3060c61d}} 
+\index{scene@{scene}!makeCircleWithDrone@{makeCircleWithDrone}}
+\index{makeCircleWithDrone@{makeCircleWithDrone}!scene@{scene}}
+\doxysubsubsection{\texorpdfstring{makeCircleWithDrone()}{makeCircleWithDrone()}}
+{\footnotesize\ttfamily void scene\+::make\+Circle\+With\+Drone (\begin{DoxyParamCaption}\item[{double}]{radius }\end{DoxyParamCaption})}
+
+make circle shaped route with landing \mbox{\Hypertarget{classscene_a5907331c3912a3c6f59d913189f129d7}\label{classscene_a5907331c3912a3c6f59d913189f129d7}} 
+\index{scene@{scene}!moveObjectFromList@{moveObjectFromList}}
+\index{moveObjectFromList@{moveObjectFromList}!scene@{scene}}
+\doxysubsubsection{\texorpdfstring{moveObjectFromList()}{moveObjectFromList()}}
+{\footnotesize\ttfamily void scene\+::move\+Object\+From\+List (\begin{DoxyParamCaption}\item[{int}]{index,  }\item[{\mbox{\hyperlink{classvector3_d}{vector3D}}}]{pos }\end{DoxyParamCaption})}
+
+move object chosen by index, by vector ~\newline
+ \mbox{\Hypertarget{classscene_a51c3767443697266b5abc48ad02574c8}\label{classscene_a51c3767443697266b5abc48ad02574c8}} 
+\index{scene@{scene}!rotateObjectFromList@{rotateObjectFromList}}
+\index{rotateObjectFromList@{rotateObjectFromList}!scene@{scene}}
+\doxysubsubsection{\texorpdfstring{rotateObjectFromList()}{rotateObjectFromList()}}
+{\footnotesize\ttfamily void scene\+::rotate\+Object\+From\+List (\begin{DoxyParamCaption}\item[{int}]{index,  }\item[{\mbox{\hyperlink{class_matrix3x3}{Matrix3x3}}}]{orient }\end{DoxyParamCaption})}
+
+rotate object chosen by index, by angle in degree ~\newline
+ 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/chilon/\+Pobrane/zad5\+\_\+3-\/\+Grzegorz\+Wojnarowicz/inc/scene.\+h\item 
+/home/chilon/\+Pobrane/zad5\+\_\+3-\/\+Grzegorz\+Wojnarowicz/src/scene.\+cpp\end{DoxyCompactItemize}
